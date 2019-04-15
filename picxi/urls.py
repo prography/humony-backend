@@ -21,5 +21,5 @@ urlpatterns = [
     path('inpic/<str:pk>/', views.InPicDetail.as_view()),
     path('outpic/', views.OutPicList.as_view()),
     path('outpic/<str:pk>/', views.OutPicDetail.as_view()),
-
+   # path('user/', 'account.urls'),
 ]

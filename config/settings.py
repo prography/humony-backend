@@ -26,11 +26,12 @@ SECRET_KEY = '680r606qe98r$h$xynp1o73hl)7k3fw(0^8nu+qzx^^bj-0vgp'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+AUTH_USER_MODEL = 'account.User'
 
 # Application definition
 
 INSTALLED_APPS = [
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'account.apps.accountConfig',
 
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -81,6 +84,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 
 # Password validation

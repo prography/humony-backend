@@ -9,9 +9,6 @@ import sys
 # env_var = input()
 
 if __name__ == '__main__':
-
-
-
     # if env_var == '1':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.development')
     # else:
