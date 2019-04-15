@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 CORS_ORIGIN_ALLOW_ALL = True
-
+AUTH_USER_MODEL = 'account.User'
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'social_core',
     'corsheaders',
     'picxi',
+    'account',
 
 ]
 
